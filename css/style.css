@@ -3,10 +3,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #F4F4F4; /* Adjust to match your flyer */
+    color: #333333;
 }
 
 header {
-    background-color: #003366;
+    background-color: #1F4E79; /* Primary color from flyer */
     color: white;
     padding: 20px;
 }
@@ -14,15 +16,16 @@ header {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00;
-    color: #003366;
+    background-color: #EAAA00; /* Button color from flyer */
+    color: white;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
+    border-radius: 5px;
 }
 
 footer {
-    background-color: #003366;
+    background-color: #222222; /* Secondary color from flyer */
     color: white;
     padding: 10px;
     position: fixed;
