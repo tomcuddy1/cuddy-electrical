@@ -13,22 +13,28 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 15px 30px;
+    padding: 15px 5%;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
+/* Logo */
 .logo img {
     height: 50px;
+    max-width: 100%;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-grow: 1; /* Ensures it expands */
+    justify-content: center; /* Centers nav items */
 }
 
 .nav-links li {
@@ -72,8 +78,9 @@ nav {
     display: block;
 }
 
+/* Phone Number Button */
 .phone {
-    margin-left: auto;
+    flex-shrink: 0; /* Prevents shrinking */
 }
 
 .phone-btn {
@@ -83,10 +90,29 @@ nav {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .phone-btn:hover {
     background: #0088cc;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .phone {
+        margin-top: 10px;
+    }
 }
 
 /* Hero Section */
