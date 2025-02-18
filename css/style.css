@@ -136,7 +136,7 @@ nav {
 
 /* Hero Section */
 header {
-    background: url('images/hero.jpg') center/cover no-repeat fixed;
+    background: url('../images/hero.jpg') center/cover no-repeat fixed;
     height: 100vh;
     display: flex;
     align-items: center;
