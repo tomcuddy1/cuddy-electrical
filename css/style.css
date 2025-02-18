@@ -18,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 0;
+    padding: 10px 20px; /* Add padding to give space around elements */
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,6 +26,7 @@ nav {
     z-index: 1000;
     max-width: 100%;
     overflow: hidden;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 .logo img {
